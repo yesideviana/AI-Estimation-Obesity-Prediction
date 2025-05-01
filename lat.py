@@ -2,15 +2,19 @@ import streamlit as st
 st.title('Obesity Prediction based on Eating Habits and Physical Condition')
 
 col1, col2 = st.columns(2)
-tinggi = st.number_input("Masukkan Tinggi Badan", 0)
-berat = st.number_input("Masukkan Berat Badan", 0)
-kalori = st.text_input ("input nilai kalori harian", Yes)
-fisik = st.text_input ("input nilai Aktifitas Fisik")
 with col1 :
-    Berat = st.text_input ('input nilai berat badan')
-
+tinggi = st.number_input("Masukkan Tinggi Badan", 0)
 with col2 :
-    tinggi = st.text_input ('input nilai tinggi badan')
+berat = st.number_input("Masukkan Berat Badan", 0)
+with col1 :
+kalori = st.text_input ("input nilai kalori harian", Yes)
+with col2 :
+fisik = st.text_input ("input nilai Aktifitas Fisik")
+
+   #Berat = st.text_input ('input nilai berat badan')
+
+
+    #tinggi = st.text_input ('input nilai tinggi badan')
 
 with col1 :
     Insulin = st.text_input ('input nilai Insulin')
