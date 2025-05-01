@@ -3,9 +3,9 @@ st.title('Obesity Prediction based on Eating Habits and Physical Condition')
 
 col1, col2 = st.columns(2)
 with col1 :
-tinggi = st.number_input("Masukkan Tinggi Badan", 0)
+Berat = st.text_input("Masukkan Berat Badan", 0)
 with col2 :
-berat = st.number_input("Masukkan Berat Badan", 0)
+Tinggi = st.text_input("Masukkan Berat Badan", 0)
 with col1 :
 kalori = st.text_input ("input nilai kalori harian", Yes)
 with col2 :
