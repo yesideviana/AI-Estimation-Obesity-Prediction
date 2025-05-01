@@ -5,13 +5,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report
 
-
-#tinggi = st.number_input("Masukkan Tinggi Badan", 0)
-#berat = st.number_input("Masukkan Berat Badan", 0)
 data = {
    
-    'tinggi_badan': [160, 170, 165, 175, 180, 155],
-    'berat_badan': [60, 80, 55, 90, 100, 50],
+    tinggi = st.number_input("Masukkan Tinggi Badan", 0)
+    berat = st.number_input("Masukkan Berat Badan", 0)
     'jenis_kelamin': [0, 1, 0, 1, 1, 0],  # 0 untuk perempuan, 1 untuk laki-laki
     'pola_makan': [1, 0, 1, 0, 1, 1],  # 1 untuk buruk, 0 untuk baik
     'aktivitas_fisik': [1, 0, 1, 0, 0, 1],  # 1 untuk aktif, 0 untuk tidak aktif
