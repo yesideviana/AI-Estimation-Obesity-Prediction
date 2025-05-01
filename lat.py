@@ -22,7 +22,7 @@ with col2 :
     kalori = st.text_input ('Masukkan Kalori Harian Anda')
 
 with col1 :
-    obesPedigreeFunction = st.text_input ('Masukkan Obes Pedigree Function')
+    obesPedigreeFunction = st.text_input ('Masukkan Obesitas Pedigree Function')
 
 with col2 :
     sayur = st.text_input ('Apakah anda Mengkonsumsi Sayur')
@@ -30,7 +30,7 @@ with col2 :
 # code untuk prediksi Obes
 
 if st.button('Test Prediksi Obesitas'):
-   obesity_prediction = obes_model.predict([[berat, tinggi, kalori, Gaya, Aktifitas, obesPedigreeFunction, umur, sayur]])
+   obesity_prediction = obes_model.prediction([[berat, tinggi, kalori, Gaya, Aktifitas, obesPedigreeFunction, umur, sayur]])
 
     if(obesity_prediction[0] == 1):
         obesity_diagnosis = 'Anda mengalami Obesitas'
