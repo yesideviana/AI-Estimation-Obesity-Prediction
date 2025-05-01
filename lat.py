@@ -30,7 +30,7 @@ with col2 :
 # code untuk prediksi Obes
 
 if st.button('Test Prediksi Obesitas'):
-   obes_prediction = obes_model.predict([[Berat, Tinggi, Kalori, Gaya, Aktifitas, ObesPedigreeFunction, Umur, sayur]])
+   obes_prediction = obes_model.predict([[berat, tinggi, kalori, Gaya, Aktifitas, obesPedigreeFunction, umur, sayur]])
 
     if(obes_prediction[0] == 1):
         obes_diagnosis = 'Anda mengalami Obess'
