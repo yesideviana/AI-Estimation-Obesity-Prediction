@@ -28,11 +28,11 @@ with col1 :
 with col2 :
     Age = st.text_input ('input nilai Age')
 
-# code untuk prediksi
-diab_diagnosis = ''
+# code untuk prediksi Obes
+
 
 # membuat tombol untuk prediksi
-if st.button('Test Prediksi Diabetes'):
+if st.button('Test Prediksi Obesitas'):
     diab_prediction = diabetes_model.predict([[Berat, tinggi, kalori, fisik, Insulin, BMI, DiabetesPedigreeFunction, Age]])
 
     if(diab_prediction[0] == 1):
