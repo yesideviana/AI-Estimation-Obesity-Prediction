@@ -3,28 +3,28 @@ st.title('Obesity Prediction based on Eating Habits and Physical Condition')
 
 col1, col2 = st.columns(2)
 with col1 :
-Berat = st.number("Masukkan Berat Badan", 0)
+Berat = st.number_input("Masukkan Berat Badan", 0)
 
 with col2 :
-Tinggi = st.number("Masukkan Berat Badan",0 )
+Tinggi = st.number_input("Masukkan Berat Badan",0 )
 
 with col1 :
-kalori = st.number ("Masukkan nilai kalori harian",0)
+kalori = st.number_input("Masukkan nilai kalori harian",0)
 
 with col2 :
-fisik = st.number ("Masukkan nilai Aktifitas Fisik",0)
+fisik = st.number_input("Masukkan nilai Aktifitas Fisik",0)
 
    with col1 :
-    Insulin = st.number ('Masukkan nilai Insulin',0)
+    Insulin = st.number_input('Masukkan nilai Insulin',0)
 
 with col2 :
-    BMI = st.number ('Apakah ada Aktifitas Fisik',0)
+    BMI = st.number_input('Apakah ada Aktifitas Fisik',0)
 
 with col1 :
-    ObesPedigreeFunction = st.number ('Apakah Gaya Hidup Anda',0)
+    ObesPedigreeFunction = st.number_input('Apakah Gaya Hidup Anda',0)
 
 with col2 :
-    Age = st.number ('input nilai Age',0)
+    Age = st.number_input('input nilai Age',0)
 
 # code untuk prediksi Obes
 
