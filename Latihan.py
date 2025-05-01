@@ -7,8 +7,8 @@ st.title('Obesity Prediction based on Eating Habits and Physical Condition')
 
 data = {
    
-    'tinggi' = st.number_input("Masukkan Tinggi Badan", 0)
-    'berat' = st.number_input("Masukkan Berat Badan", 0)
+    'tinggi' = st.number_input("Masukkan Tinggi Badan", 0),
+    'berat' = st.number_input("Masukkan Berat Badan", 0),
     'jenis_kelamin': [0, 1, 0, 1, 1, 0],  # 0 untuk perempuan, 1 untuk laki-laki
     'pola_makan': [1, 0, 1, 0, 1, 1],  # 1 untuk buruk, 0 untuk baik
     'aktivitas_fisik': [1, 0, 1, 0, 0, 1],  # 1 untuk aktif, 0 untuk tidak aktif
