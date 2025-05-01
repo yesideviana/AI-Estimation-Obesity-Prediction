@@ -1,9 +1,9 @@
 import streamlit as st
 st.title('Obesity Prediction based on Eating Habits and Physical Condition')
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, classification_report
+#from sklearn.model_selection import train_test_split
+#from sklearn.linear_model import LogisticRegression
+#from sklearn.preprocessing import StandardScaler
+#from sklearn.metrics import accuracy_score, classification_report
 
 data = {
    
