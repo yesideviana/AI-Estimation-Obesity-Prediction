@@ -4,35 +4,35 @@ st.title('Obesity Prediction based on Eating Habits and Physical Condition')
 col1, col2 = st.columns(2)
 
 with col1 :
-BeratBadan = st.number_input ("Masukkan Berat Badan", 0)
+    tinggi = st.text_input ('Masukkan Tinggi Anda')
 
 with col2 :
-TinggiBadan = st.number_input ("Masukkan Tinggi Badan", 0)
+    berat = st.text_input ('Masukkan Berat Anda')
 
 with col1 :
-Kalori = st.number_input ("Masukkan nilai kalori harian", 0)
+    umur = st.text_input ('Masukkan Umur Anda')
 
 with col2 :
-Fisik = st.number_input ("Masukkan nilai Aktifitas Fisik", 0)
-
-   with col1 :
-    Insulin = st.number_input ("Masukkan nilai Insulin", 0)
-
-with col2 :
-    AktifitasFisik = st.number_input ("Apakah ada Aktifitas Fisik", 0)
+    Aktifitas = st.text_input ('Apakah ada Aktifitas Fisik')
 
 with col1 :
-    ObesPedigreeFunction = st.number_input ("Apakah Gaya Hidup Anda", 0)
+    Gaya = st.text_input ('Apakah Gaya Hidup anda Sehat')
 
 with col2 :
-    Umur = st.number_input ("Masukkan Umur", 0)
+    kalori = st.text_input ('Masukkan Kalori Harian Anda')
+
+with col1 :
+    obesPedigreeFunction = st.text_input ('Masukkan Obes Pedigree Function')
+
+with col2 :
+    sayur = st.text_input ('Apakah anda Mengkonsumsi Sayur')
 
 # code untuk prediksi Obes
 
 if st.button('Test Prediksi Obesitas'):
-   obes_prediction = obes_model.predict([[Berat, Tinggi, Kalori, Fisik, Insulin, AktifitasFisik, ObesPedigreeFunction, Umur]])
+   obes_prediction = obes_model.predict([[Berat, Tinggi, Kalori, Gaya, Aktifitas, ObesPedigreeFunction, Umur, sayur]])
 
-    if(diab_prediction[0] == 1):
+    if(obes_prediction[0] == 1):
         obes_diagnosis = 'Anda mengalami Obess'
     else:
         obes_diagnosis = 'Anda tidak mengalami Obes'
