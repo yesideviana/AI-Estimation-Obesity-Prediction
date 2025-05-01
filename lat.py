@@ -7,7 +7,7 @@ with col1 :
 Berat = st.number_input("Masukkan Berat Badan", 0)
 
 with col2 :
-Tinggi = st.number_input("Masukkan Berat Badan",0)
+Tinggi = st.number_input("Masukkan Tinggi Badan",0)
 
 with col1 :
 Kalori = st.number_input("Masukkan nilai kalori harian",0)
