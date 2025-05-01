@@ -10,10 +10,10 @@ with col2 :
 Tinggi = st.number_input("Masukkan Berat Badan",0)
 
 with col1 :
-kalori = st.number_input("Masukkan nilai kalori harian",0)
+Kalori = st.number_input("Masukkan nilai kalori harian",0)
 
 with col2 :
-fisik = st.number_input("Masukkan nilai Aktifitas Fisik",0)
+Fisik = st.number_input("Masukkan nilai Aktifitas Fisik",0)
 
    with col1 :
     Insulin = st.number_input("Masukkan nilai Insulin",0)
@@ -30,7 +30,7 @@ with col2 :
 # code untuk prediksi Obes
 
 if st.button('Test Prediksi Obesitas'):
-   obes_prediction = obes_model.predict([[Berat, tinggi, kalori, fisik, Insulin, BMI, ObesPedigreeFunction, Umur]])
+   obes_prediction = obes_model.predict([[Berat, Tinggi, Kalori, Fisik, Insulin, BMI, ObesPedigreeFunction, Umur]])
 
     if(diab_prediction[0] == 1):
         obes_diagnosis = 'Anda mengalami Obess'
