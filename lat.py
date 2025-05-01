@@ -1,6 +1,8 @@
 import streamlit as st
 st.title('Obesity Prediction based on Eating Habits and Physical Condition')
-background : rgb
+{{
+background: rgba(0,5,0,0);
+}}
 col1, col2 = st.columns(2)
 tinggi = st.number_input("Masukkan Tinggi Badan", 0)
 berat = st.number_input("Masukkan Berat Badan", 0)
