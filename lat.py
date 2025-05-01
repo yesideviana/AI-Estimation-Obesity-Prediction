@@ -11,19 +11,14 @@ kalori = st.text_input ("input nilai kalori harian")
 with col2 :
 fisik = st.text_input ("input nilai Aktifitas Fisik")
 
-   #Berat = st.text_input ('input nilai berat badan')
-
-
-    #tinggi = st.text_input ('input nilai tinggi badan')
-
-with col1 :
+   with col1 :
     Insulin = st.text_input ('input nilai Insulin')
 
 with col2 :
-    BMI = st.text_input ('input nilai BMI')
+    BMI = st.text_input ('Apakah ada Aktifitas Fisik')
 
 with col1 :
-    DiabetesPedigreeFunction = st.text_input ('input nilai Diabetes Pedigree Function')
+    ObesPedigreeFunction = st.text_input ('Gaya Hidup Anda')
 
 with col2 :
     Age = st.text_input ('input nilai Age')
@@ -31,10 +26,10 @@ with col2 :
 # code untuk prediksi Obes
 
 if st.button('Test Prediksi Obesitas'):
-    diab_prediction = diabetes_model.predict([[Berat, tinggi, kalori, fisik, Insulin, BMI, DiabetesPedigreeFunction, Age]])
+   obes_prediction = obes_model.predict([[Berat, tinggi, kalori, fisik, Insulin, BMI, ObesPedigreeFunction, Age]])
 
     if(diab_prediction[0] == 1):
-        diab_diagnosis = 'Anda mengalami Obess'
+        obes_diagnosis = 'Anda mengalami Obess'
     else:
-        diab_diagnosis = 'Anda tidak mengalami Obes'
-st.success(diab_diagnosis)
+        obes_diagnosis = 'Anda tidak mengalami Obes'
+st.success(obes_diagnosis)
